@@ -34,10 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Usuario = new System.Windows.Forms.TextBox();
             this.txt_Contraseña = new System.Windows.Forms.TextBox();
+            this.lbl_Mensaje = new System.Windows.Forms.Label();
             this.btn_Cancelar = new System.Windows.Forms.PictureBox();
             this.btn_Entrar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_Mensaje = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Entrar)).BeginInit();
@@ -103,6 +103,16 @@
             this.txt_Contraseña.Size = new System.Drawing.Size(340, 24);
             this.txt_Contraseña.TabIndex = 5;
             // 
+            // lbl_Mensaje
+            // 
+            this.lbl_Mensaje.AutoSize = true;
+            this.lbl_Mensaje.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Mensaje.Location = new System.Drawing.Point(12, 184);
+            this.lbl_Mensaje.Name = "lbl_Mensaje";
+            this.lbl_Mensaje.Size = new System.Drawing.Size(78, 17);
+            this.lbl_Mensaje.TabIndex = 9;
+            this.lbl_Mensaje.Text = "Mensaje";
+            // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.Image = global::Presentacion.Properties.Resources.borrar_4_;
@@ -135,16 +145,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // lbl_Mensaje
-            // 
-            this.lbl_Mensaje.AutoSize = true;
-            this.lbl_Mensaje.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Mensaje.Location = new System.Drawing.Point(12, 184);
-            this.lbl_Mensaje.Name = "lbl_Mensaje";
-            this.lbl_Mensaje.Size = new System.Drawing.Size(78, 17);
-            this.lbl_Mensaje.TabIndex = 9;
-            this.lbl_Mensaje.Text = "Mensaje";
-            // 
             // frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +162,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

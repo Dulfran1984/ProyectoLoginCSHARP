@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_AgregarUsuario.cs" />
+    <Compile Include="cls_CargarEstado.cs" />
     <Compile Include="cls_Login.cs" />
+    <Compile Include="cls_Rol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
