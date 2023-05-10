@@ -1,7 +1,6 @@
 ﻿using Negocio;
 using System;
 using System.Windows.Forms;
-
 namespace Presentacion
 {
     public partial class frm_Admin : Form

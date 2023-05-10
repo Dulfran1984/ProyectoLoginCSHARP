@@ -1,7 +1,6 @@
 ﻿using System;
 using Datos;
 using System.Data;
-
 namespace Negocio
 {
     public class cls_CargarEstado

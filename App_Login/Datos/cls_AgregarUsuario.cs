@@ -46,7 +46,7 @@ namespace Datos
                 cmd.Parameters.AddWithValue("@Contacto", this.str_contacto);
                 cmd.Parameters.AddWithValue("@Correo", this.str_contacto);
                 cmd.ExecuteNonQuery();
-                str_msn = "Registro exitoso";
+                str_msn = str_nombre + str_apellido + " ha sido registrado con éxito";
                 this.int_tipoMensaje = 1;
                 fnt_RegistrarUser();
             }
