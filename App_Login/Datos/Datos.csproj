@@ -84,6 +84,7 @@
     <Compile Include="cls_AgregarUsuario.cs" />
     <Compile Include="cls_CargarEstado.cs" />
     <Compile Include="cls_Conexion.cs" />
+    <Compile Include="cls_ConsultarPersona.cs" />
     <Compile Include="cls_Login.cs" />
     <Compile Include="cls_Rol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
