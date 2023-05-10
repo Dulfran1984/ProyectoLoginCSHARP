@@ -11,7 +11,7 @@ namespace Datos
         {
             conex = new MySqlConnection();
             //************* CONEXION BASE DATOS ******************
-            String servidor = "10.230.16.121";
+            String servidor = "10.230.16.162";
             String bd = "dbs_login_dulfran";
             String usuario = "yoyito";
             String contraseña = "Sena2023";

@@ -91,7 +91,7 @@
             this.txt_Usuario.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Usuario.Location = new System.Drawing.Point(187, 80);
             this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(220, 24);
+            this.txt_Usuario.Size = new System.Drawing.Size(340, 24);
             this.txt_Usuario.TabIndex = 4;
             // 
             // txt_Contraseña
@@ -99,13 +99,14 @@
             this.txt_Contraseña.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Contraseña.Location = new System.Drawing.Point(187, 115);
             this.txt_Contraseña.Name = "txt_Contraseña";
-            this.txt_Contraseña.Size = new System.Drawing.Size(220, 24);
+            this.txt_Contraseña.PasswordChar = '●';
+            this.txt_Contraseña.Size = new System.Drawing.Size(340, 24);
             this.txt_Contraseña.TabIndex = 5;
             // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.Image = global::Presentacion.Properties.Resources.borrar_4_;
-            this.btn_Cancelar.Location = new System.Drawing.Point(300, 150);
+            this.btn_Cancelar.Location = new System.Drawing.Point(420, 145);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(45, 40);
             this.btn_Cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +116,7 @@
             // btn_Entrar
             // 
             this.btn_Entrar.Image = global::Presentacion.Properties.Resources.ingresar;
-            this.btn_Entrar.Location = new System.Drawing.Point(351, 150);
+            this.btn_Entrar.Location = new System.Drawing.Point(471, 145);
             this.btn_Entrar.Name = "btn_Entrar";
             this.btn_Entrar.Size = new System.Drawing.Size(56, 40);
             this.btn_Entrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,12 +133,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lbl_Mensaje
             // 
             this.lbl_Mensaje.AutoSize = true;
             this.lbl_Mensaje.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Mensaje.Location = new System.Drawing.Point(29, 39);
+            this.lbl_Mensaje.Location = new System.Drawing.Point(12, 184);
             this.lbl_Mensaje.Name = "lbl_Mensaje";
             this.lbl_Mensaje.Size = new System.Drawing.Size(78, 17);
             this.lbl_Mensaje.TabIndex = 9;

@@ -1,5 +1,6 @@
 ﻿using Negocio;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Presentacion
@@ -9,6 +10,7 @@ namespace Presentacion
         public frm_Login()
         {
             InitializeComponent();
+            lbl_Mensaje.Visible = false;
         }
         private void fnt_Login(string user, string password)
         {
@@ -22,11 +24,27 @@ namespace Presentacion
                 obj_Admin.lbl_Rol.Text = obj_Login.getRol();
                 Visible = false;
             }
+            if (obj_Login.getRol() == "Ventas")
+            {
+                frm_Ventas obj_Admin = new frm_Ventas();
+                obj_Admin.Visible = true;
+                obj_Admin.lbl_Encargado.Text = obj_Login.getNombre();
+                obj_Admin.lbl_Estado.Text = obj_Login.getEstado();
+                obj_Admin.lbl_Rol.Text = obj_Login.getRol();
+                Visible = false;
+            }
+            lbl_Mensaje.ForeColor = Color.Red;
             lbl_Mensaje.Text = obj_Login.getMsn();
+            lbl_Mensaje.Visible = true;
         }
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
             fnt_Login(txt_Usuario.Text, txt_Contraseña.Text);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
