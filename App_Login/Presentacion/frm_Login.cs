@@ -26,11 +26,20 @@ namespace Presentacion
             }
             if (obj_Login.getRol() == "Ventas")
             {
-                frm_Ventas obj_Admin = new frm_Ventas();
-                obj_Admin.Visible = true;
-                obj_Admin.lbl_Encargado.Text = obj_Login.getNombre();
-                obj_Admin.lbl_Estado.Text = obj_Login.getEstado();
-                obj_Admin.lbl_Rol.Text = obj_Login.getRol();
+                frm_Ventas obj_ventas = new frm_Ventas();
+                obj_ventas.Visible = true;
+                obj_ventas.lbl_Encargado.Text = obj_Login.getNombre();
+                obj_ventas.lbl_Estado.Text = obj_Login.getEstado();
+                obj_ventas.lbl_Rol.Text = obj_Login.getRol();
+                Visible = false;
+            }
+            if (obj_Login.getRol() == "Inventario")
+            {
+                frm_Inventario obj_inventario = new frm_Inventario();
+                obj_inventario.Visible = true;
+                obj_inventario.lbl_Encargado.Text = obj_Login.getNombre();
+                obj_inventario.lbl_Estado.Text = obj_Login.getEstado();
+                obj_inventario.lbl_Rol.Text = obj_Login.getRol();
                 Visible = false;
             }
             lbl_Mensaje.ForeColor = Color.Red;
