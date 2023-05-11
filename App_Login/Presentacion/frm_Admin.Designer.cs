@@ -55,11 +55,13 @@
             this.btn_Actualizar = new System.Windows.Forms.PictureBox();
             this.btn_Cancelar = new System.Windows.Forms.PictureBox();
             this.btn_Guardar = new System.Windows.Forms.PictureBox();
+            this.dtg_Usuarios = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Consultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Guardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_Usuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -332,12 +334,26 @@
             this.btn_Guardar.TabStop = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
+            // dtg_Usuarios
+            // 
+            this.dtg_Usuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_Usuarios.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dtg_Usuarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtg_Usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_Usuarios.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtg_Usuarios.Location = new System.Drawing.Point(449, 97);
+            this.dtg_Usuarios.Name = "dtg_Usuarios";
+            this.dtg_Usuarios.Size = new System.Drawing.Size(339, 209);
+            this.dtg_Usuarios.TabIndex = 29;
+            this.dtg_Usuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_Usuarios_CellDoubleClick);
+            // 
             // frm_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtg_Usuarios);
             this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.btn_Actualizar);
             this.Controls.Add(this.cbx_Estado);
@@ -369,6 +385,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Guardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_Usuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,5 +420,6 @@
         private System.Windows.Forms.ComboBox cbx_Estado;
         private System.Windows.Forms.PictureBox btn_Actualizar;
         private System.Windows.Forms.PictureBox btn_Consultar;
+        private System.Windows.Forms.DataGridView dtg_Usuarios;
     }
 }

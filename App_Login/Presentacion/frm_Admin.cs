@@ -25,6 +25,12 @@ namespace Presentacion
             cbx_Rol.DisplayMember = "Descripcion";
             cbx_Rol.DataSource = obj_Rol.getDatatable();
         }
+        private void fnt_ConsultarUser()
+        {
+            cls_dtgUsuarios obj_Usuarios = new cls_dtgUsuarios();
+            obj_Usuarios.fnt_consultarUsuarios();
+            dtg_Usuarios.DataSource = obj_Usuarios.dt_consultarUsuarios();
+        }
         private void btn_Cerarr_Click(object sender, EventArgs e)
         {
             Visible = false;
@@ -36,6 +42,7 @@ namespace Presentacion
         {
             fnt_ConsultarEstado();
             fnt_ConsultarRol();
+            fnt_ConsultarUser();
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
@@ -77,6 +84,13 @@ namespace Presentacion
             {
                 MessageBox.Show(obj_Consultar.getMensaje(), "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dtg_Usuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int fila = dtg_Usuarios.CurrentRow.Index;
+            MessageBox.Show(""+fila);
+            txt_Nombres.Text = Convert.ToString(dtg_Usuarios.Rows[fila].Cells[0].Value);
         }
     }
 }
