@@ -88,3 +88,4 @@ C:\Users\SENA\Documents\GitHub\Login\ProyectoLoginCSHARP\App_Login\Presentacion\
 C:\Users\SENA\Documents\GitHub\Login\ProyectoLoginCSHARP\App_Login\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\SENA\Documents\GitHub\Login\ProyectoLoginCSHARP\App_Login\Presentacion\obj\Debug\Presentacion.frm_Ventas.resources
 C:\Users\SENA\Documents\GitHub\Login\ProyectoLoginCSHARP\App_Login\Presentacion\obj\Debug\Presentacion.frm_Inventario.resources
+C:\Users\SENA\Documents\GitHub\Login\ProyectoLoginCSHARP\App_Login\Presentacion\obj\Debug\Presentacion.Form1.resources
