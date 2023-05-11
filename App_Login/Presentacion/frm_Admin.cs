@@ -62,5 +62,21 @@ namespace Presentacion
                 MessageBox.Show("" + obj_Agregar.getMensaje(), "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btn_Consultar_Click(object sender, EventArgs e)
+        {
+            cls_ConsultarPersona obj_Consultar = new cls_ConsultarPersona();
+            obj_Consultar.fnt_Consultar(txt_Identificacion.Text);
+            txt_Nombres.Text = obj_Consultar.get_nombre();
+            txt_Apellidos.Text = obj_Consultar.get_apellido();
+            txt_Contacto.Text = obj_Consultar.get_contacto();
+            txt_Correo.Text = obj_Consultar.get_correo();
+            cbx_Estado.SelectedIndex = obj_Consultar.get_estado() - 1;
+            cbx_Rol.SelectedIndex = obj_Consultar.getrol() - 1;
+            if(obj_Consultar.getMensaje() != "")
+            {
+                MessageBox.Show(obj_Consultar.getMensaje(), "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

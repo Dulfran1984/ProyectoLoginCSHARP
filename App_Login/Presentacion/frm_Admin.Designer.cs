@@ -298,6 +298,7 @@
             this.btn_Consultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Consultar.TabIndex = 28;
             this.btn_Consultar.TabStop = false;
+            this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
             // btn_Actualizar
             // 

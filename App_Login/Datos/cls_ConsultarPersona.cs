@@ -33,7 +33,6 @@ namespace Datos
                     str_correo = reader["Correo"].ToString();
                     int_estado = Convert.ToInt16(reader["Estado"].ToString());
                     int_rol = Convert.ToInt16(reader["Rol"].ToString());
-                    this.str_msn = "";
                 }
                 obj_Conectar.fnt_Desconectar();
             }
